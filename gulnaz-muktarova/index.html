@@ -5,22 +5,63 @@
 <title>Gulnaz Muktarova • CMYK Exhibition 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {margin:0; background:#f4f4f4; font-family:system-ui; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:40px 20px; position:relative;}
-  body::before {content:''; position:absolute; inset:0; background-image:linear-gradient(#a8a8a8 1.5px,transparent 1.5px),linear-gradient(90deg,#a8a8a8 1.5px,transparent 1.5px); background-size:28px 28px; opacity:0.28; z-index:0; pointer-events:none;}
-  a.back {position:fixed; top:30px; left:30px; background:rgba(255,255,255,0.92); color:#222; padding:10px 22px; border-radius:9999px; text-decoration:none; font-weight:600; font-size:0.95rem; z-index:10; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-  .card {background:white; padding:60px 50px; border-radius:20px; box-shadow:0 10px 35px rgba(0,0,0,0.12); text-align:center; max-width:560px; position:relative; z-index:1;}
-  h1 {font-size:2.4rem; color:#222; margin:0 0 8px;}
-  .sub {color:#555; font-size:1.15rem; margin-bottom:40px;}
-  a.pdf {display:inline-block; background:#003366; color:white; padding:18px 46px; border-radius:9999px; text-decoration:none; font-weight:700; font-size:1.1rem; transition:all .2s;}
-  a.pdf:hover {background:#222;}
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; background: #f4f4f4; font-family: 'Space Grotesk', system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
+    padding: 40px 20px; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,255,0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,255,0.12) 1px, transparent 1px);
+    background-size: 24px 24px; z-index: 0; pointer-events: none;
+  }
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 120px 120px; z-index: 0; pointer-events: none;
+  }
+  a.back {
+    position: fixed; top: 30px; left: 30px;
+    background: rgba(255,255,255,0.95); color: #333;
+    padding: 10px 24px; border-radius: 4px; text-decoration: none;
+    font-weight: 600; font-size: 0.85rem; z-index: 10;
+    letter-spacing: 1px; text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .card {
+    background: white; padding: 60px 50px; border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    text-align: center; max-width: 560px; position: relative; z-index: 1;
+    border-top: 4px solid #00FFFF;
+  }
+  h1 { font-size: 2.2rem; color: #111; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .sub {
+    color: #888; font-size: 0.95rem; margin-bottom: 40px;
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  a.pdf {
+    display: inline-block; background: #00FFFF; color: #111;
+    padding: 16px 44px; border-radius: 4px; text-decoration: none;
+    font-weight: 700; font-size: 0.95rem; transition: all .2s;
+    letter-spacing: 1px; text-transform: uppercase;
+    border: 2px solid #00FFFF;
+  }
+  a.pdf:hover { background: #fff; color: #00FFFF; }
 </style>
 </head>
 <body>
-  <a href="../year1.html" class="back">← Back to Year 1</a>
+  <a href="../year1.html" class="back">← Create · Year 1</a>
   <div class="card">
     <h1>Gulnaz Muktarova</h1>
     <div class="sub">CMYK Exhibition 2026</div>
-    <a href="Gulnaz_Muktarova_ADS2_Portfolio.pdf" class="pdf">View Portfolio (PDF)</a>
+    <a href="Gulnaz_Muktarova_ADS2_Portfolio.pdf" class="pdf">View Portfolio</a>
   </div>
 </body>
 </html>

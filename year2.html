@@ -2,24 +2,72 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Year 2 • CMYK Exhibition 2026</title>
+<title>Measure • CMYK Exhibition 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {margin:0; background:#990000; color:#fff; font-family:system-ui; padding:50px 20px;}
-  .container {max-width:900px; margin:0 auto;}
-  h1 {font-size:3rem; text-align:center; margin-bottom:10px;}
-  .nav {text-align:center; margin-bottom:50px;}
-  .nav a {color:#fff; text-decoration:none; opacity:0.8;}
-  .nav a:hover {opacity:1;}
-  .students {display:grid; gap:15px; max-width:700px; margin:0 auto;}
-  .student {background:rgba(255,255,255,0.1); border-radius:16px; padding:22px 28px; transition:all .3s ease;}
-  .student:hover {background:rgba(255,255,255,0.2);}
-  a {color:#fff; text-decoration:none; font-size:1.3rem; font-weight:600;}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; background: #FF00FF; font-family: 'Space Grotesk', system-ui, sans-serif;
+    padding: 50px 20px; position: relative; min-height: 100vh;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 24px 24px; z-index: 0; pointer-events: none;
+  }
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 120px 120px; z-index: 0; pointer-events: none;
+  }
+  .container { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+  .title-block {
+    text-align: center; margin-bottom: 8px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    display: inline-block; padding-bottom: 6px;
+  }
+  h1 { font-size: 2.8rem; color: #fff; letter-spacing: -1px; font-weight: 700; }
+  .subtitle {
+    text-align: center; color: rgba(255,255,255,0.7);
+    font-size: 0.95rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 50px;
+  }
+  .nav { text-align: center; margin-bottom: 40px; }
+  .nav a {
+    color: #fff; text-decoration: none; opacity: 0.7;
+    font-size: 0.95rem; letter-spacing: 1px;
+  }
+  .nav a:hover { opacity: 1; }
+  .students { display: grid; gap: 12px; max-width: 700px; margin: 0 auto; }
+  .student {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px; padding: 20px 28px; transition: all .3s ease;
+  }
+  .student:hover { background: rgba(255,255,255,0.2); transform: translateX(4px); }
+  .student a {
+    color: #fff; text-decoration: none;
+    font-size: 1.2rem; font-weight: 600; letter-spacing: 0.5px;
+  }
+  .placeholder {
+    text-align: center; font-size: 1.2rem;
+    color: rgba(255,255,255,0.6);
+    padding: 60px 20px;
+  }
+  .back-wrap { text-align: center; margin-top: 50px; }
+  .back-wrap a {
+    color: #fff; text-decoration: none;
+    font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6;
+  }
+  .back-wrap a:hover { opacity: 1; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Measure</h1>
+  <div style="text-align:center;"><div class="title-block"><h1>Measure</h1></div></div>
+  <div class="subtitle">Measure · Year 2</div>
   <div class="nav"><a href="index.html">← Back to Home</a></div>
   <div class="students">
     <div class="student"><a href="vedaang-chavan/">Vedaang Chavan</a></div>

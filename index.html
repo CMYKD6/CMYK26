@@ -5,35 +5,78 @@
 <title>CMYK Exhibition 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {margin:0; background:#fff; color:#111; font-family:system-ui; padding:60px 20px;}
-  .container {max-width:920px; margin:0 auto; text-align:center;}
-  h1 {font-size:3.6rem; margin-bottom:8px; color:#111;}
-  .subtitle {font-size:1.45rem; color:#555; margin-bottom:70px;}
-  .buttons {display:flex; gap:18px; justify-content:center; flex-wrap:wrap;}
-  .btn {padding:26px 52px; border-radius:18px; text-decoration:none; font-size:1.35rem; font-weight:700; transition:all .3s ease; min-width:200px; box-shadow:0 6px 18px rgba(0,0,0,0.12); display:inline-block;}
-  .btn1 {background:#003366; color:#fff; border:3px solid #003366;}
-  .btn1:hover {background:#fff; color:#003366;}
-  .btn2 {background:#990000; color:#fff; border:3px solid #990000;}
-  .btn2:hover {background:#fff; color:#990000;}
-  .btn3 {background:#D4A800; color:#111; border:3px solid #D4A800;}
-  .btn3:hover {background:#111; color:#D4A800;}
-  .btn4 {background:#1A1A1A; color:#fff; border:3px solid #1A1A1A;}
-  .btn4:hover {background:#fff; color:#1A1A1A;}
-  .btn5 {background:#888888; color:#fff; border:3px solid #888888;}
-  .btn5:hover {background:#fff; color:#888888;}
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; background: #f4f4f4; font-family: 'Space Grotesk', system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
+    position: relative; padding: 60px 20px;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+    background-size: 24px 24px; z-index: 0; pointer-events: none;
+  }
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 120px 120px; z-index: 0; pointer-events: none;
+  }
+  .container {
+    max-width: 960px; margin: 0 auto; text-align: center;
+    position: relative; z-index: 1;
+  }
+  .title-block {
+    margin-bottom: 12px;
+    border-bottom: 2px solid #222;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  h1 { font-size: 3.2rem; color: #111; letter-spacing: -1px; font-weight: 700; }
+  .subtitle {
+    font-size: 1.1rem; color: #555; margin-bottom: 60px;
+    letter-spacing: 3px; text-transform: uppercase; font-weight: 400;
+  }
+  .buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    padding: 24px 40px; border-radius: 4px; text-decoration: none;
+    font-size: 1.05rem; font-weight: 600; transition: all .3s ease; min-width: 160px;
+    border: 2px solid; letter-spacing: 1px; text-transform: uppercase;
+    display: inline-block; position: relative;
+  }
+  .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+  .btn1 { background: #00FFFF; color: #111; border-color: #00c8c8; }
+  .btn1:hover { background: #00e0e0; }
+  .btn2 { background: #FF00FF; color: #fff; border-color: #cc00cc; }
+  .btn2:hover { background: #e000e0; }
+  .btn3 { background: #FFFF00; color: #111; border-color: #cccc00; }
+  .btn3:hover { background: #e6e600; }
+  .btn4 { background: #000000; color: #fff; border-color: #333; }
+  .btn4:hover { background: #222; }
+  .btn5 { background: #939598; color: #fff; border-color: #7a7c7f; }
+  .btn5:hover { background: #7a7c7f; }
+  .footer {
+    margin-top: 60px; font-size: 0.85rem; color: #999;
+    letter-spacing: 2px; text-transform: uppercase;
+  }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>CMYK Exhibition 2026</h1>
-  <div class="subtitle">Architectural Design Studio Portfolios</div>
+  <div class="title-block"><h1>CMYK Exhibition</h1></div>
+  <div class="subtitle">Architectural Design Studio &middot; 2026</div>
   <div class="buttons">
-    <a href="year1.html" class="btn btn1">Create</a>
-    <a href="year2.html" class="btn btn2">Measure</a>
-    <a href="year3.html" class="btn btn3">Yield</a>
-    <a href="year4.html" class="btn btn4">Know</a>
-    <a href="year5.html" class="btn btn5">Masters</a>
+    <a href="year1.html" class="btn btn1">Create &middot; Year 1</a>
+    <a href="year2.html" class="btn btn2">Measure &middot; Year 2</a>
+    <a href="year3.html" class="btn btn3">Yield &middot; Year 3</a>
+    <a href="year4.html" class="btn btn4">Know &middot; Year 4</a>
+    <a href="year5.html" class="btn btn5">Masters &middot; Year 5</a>
   </div>
+  <div class="footer">Cyan &middot; Magenta &middot; Yellow &middot; Key</div>
 </div>
 </body>
 </html>
