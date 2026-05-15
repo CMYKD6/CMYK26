@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jonathan Edora Sarmiento • CMYK Exhibition 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; background: #f4f4f4; font-family: system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
+    padding: 40px 20px; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 24px 24px; z-index: 0; pointer-events: none;
+  }
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 120px 120px; z-index: 0; pointer-events: none;
+  }
+  a.back {
+    position: fixed; top: 30px; left: 30px;
+    background: rgba(255,255,255,0.95); color: #333;
+    padding: 10px 24px; border-radius: 4px; text-decoration: none;
+    font-weight: 600; font-size: 0.85rem; z-index: 10;
+    letter-spacing: 1px; text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .card {
+    background: white; padding: 60px 50px; border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    text-align: center; max-width: 560px; position: relative; z-index: 1;
+    border-top: 4px solid #FFFF00;
+  }
+  h1 { font-size: 2.2rem; color: #111; margin: 0 0 6px; }
+  .sub { color: #888; font-size: 0.95rem; margin-bottom: 40px; letter-spacing: 2px; text-transform: uppercase; }
+  a.pdf {
+    display: inline-block; background: #FFFF00; color: #111;
+    padding: 16px 44px; border-radius: 4px; text-decoration: none;
+    font-weight: 700; font-size: 0.95rem; letter-spacing: 1px; text-transform: uppercase;
+    border: 2px solid #FFFF00; transition: all .2s;
+  }
+  a.pdf:hover { background: #fff; color: #FFFF00; }
+</style>
+</head>
+<body>
+  <a href="../year3.html" class="back">← Yield · Year 3</a>
+  <div class="card">
+    <h1>Jonathan Edora Sarmiento</h1>
+    <div class="sub">CMYK Exhibition 2026</div>
+    <a href="Jonathan_Edora_Sarmiento_Portfolio.pdf" class="pdf">View Portfolio</a>
+  </div>
+</body>
+</html>
