@@ -12,11 +12,12 @@
         .header a:hover { color: #fff; }
         .hero { padding: 60px 40px; text-align: center; }
         .hero h1 { font-size: 3rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 10px; }
-        .hero .year-badge { display: inline-block; padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 1px; color: #fff; background: #000000; margin-bottom: 20px; border: 1px solid #444; }
+        .hero .year-badge { display: inline-block; padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 1px; color: #fff; background: #000; margin-bottom: 20px; border: 1px solid #444; }
         .hero .subtitle { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
-        .gallery { max-width: 1000px; margin: 0 auto; padding: 0 40px 60px; }
-        .gallery-item { margin-bottom: 20px; text-align: center; }
-        .gallery-item img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+        .pdf-viewer { width: 100%; max-width: 1200px; margin: 0 auto 40px; padding: 0 40px; }
+        .pdf-viewer iframe { width: 100%; height: 80vh; border: 1px solid #333; border-radius: 8px; }
+        .download-btn { display: inline-block; padding: 12px 32px; background: #000; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; border: 1px solid #444; transition: opacity 0.2s; }
+        .download-btn:hover { opacity: 0.85; }
         .footer { padding: 40px; text-align: center; color: #555; font-size: 13px; border-top: 1px solid #222; margin-top: 60px; }
     </style>
 </head>
@@ -30,28 +31,11 @@
         <h1>Hannah Fernando</h1>
         <p class="subtitle">CMYK+ Architecture Student Exhibition 2025-26</p>
     </div>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 001.png" alt="Hannah Fernando - Page 1" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 002.png" alt="Hannah Fernando - Page 2" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 003.png" alt="Hannah Fernando - Page 3" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 004.png" alt="Hannah Fernando - Page 4" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 005.png" alt="Hannah Fernando - Page 5" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 006.png" alt="Hannah Fernando - Page 6" loading="lazy">
-        </div>
-        <div class="gallery-item">
-            <img src="portfolio/Design Portfolio - Hannah Fernando - 007.png" alt="Hannah Fernando - Page 7" loading="lazy">
-        </div>
+    <div class="pdf-viewer">
+        <iframe src="Hannah_Fernando_portfolio.pdf" title="Hannah Fernando Portfolio"></iframe>
+    </div>
+    <div style="text-align:center; padding: 20px;">
+        <a href="Hannah_Fernando_portfolio.pdf" class="download-btn" download>Download Portfolio (3 MB / 7 pages)</a>
     </div>
     <div class="footer">
         CMYK+ Exhibition 2025-26 | School of Architecture
