@@ -6,7 +6,7 @@ Architecture student exhibition portfolios. Each student has a dedicated page wi
 
 ---
 
-## Students (33 of 47)
+## Students (35 of 47)
 
 ### Year 1 — CREATE · Cyan (8 students)
 Athena Mirielle Complido · Gulnaz Muktarova · Laura Lakyova · Mohammed Naveed Ahmed · Pearla Labib · Sumayyah Muazzam · Zahra Juzer · Zuriel Jude Olalia
@@ -24,12 +24,22 @@ Adithya Biju · Ahmad Fiqry Fuad · Alexandre James Lamare-Skyrme · Hannah Fern
 
 *Missing: Janice Fernandes, Mikhail Bykov, Ndiogou Mamour Ka, Ridhima Purohit, Ronit Sehgal, Taiba Sayed, Tala Mohamed, Timon Madiba Ayiba Duba, Umar Siddiqui*
 
-### Masters — PROGRESS (0 of 5 students)
-*Missing: Ella-Jade Chudleigh-Lyle, Majd Bayakli, Manaal Ganguli, Parthavi Parikh, Zaid Inamdar*
+### Masters — PROGRESS (2 of 5 students)
+Majd Bayakli · Zaid Inamdar
+
+*Missing: Ella-Jade Chudleigh-Lyle, Manaal Ganguli, Parthavi Parikh*
 
 ---
 
-## Latest Changes (May 18, 2026)
+## Latest Changes (June 1, 2026)
+
+### New Masters students added
+- **Majd Bayakli** (Masters) — 2 semester PDFs (Semester 1: 27 MB, Semester 2: 19 MB)
+- **Zaid Inamdar** (Masters) — 2 semester PDFs (Semester 1: 26 MB, Semester 2: 29 MB)
+
+---
+
+## Previous Changes (May 18, 2026)
 
 ### New students added
 - **Abdullah Ejaz** (Year 3) — Design portfolio PDF (40.9 MB)
@@ -69,7 +79,7 @@ Decoded **45 of 48** student QR codes from the 100-page exhibition booklet using
 
 ---
 
-## Missing Students (14)
+## Missing Students (12)
 
 If you are one of these students, please send your portfolio PDF to the exhibition team:
 
@@ -87,7 +97,5 @@ If you are one of these students, please send your portfolio PDF to the exhibiti
 | Timon Madiba Ayiba Duba | 4 | No QR code on booklet page |
 | Umar Siddiqui | 4 | Not found in booklet |
 | Ella-Jade Chudleigh-Lyle | Masters | QR code service expired |
-| Majd Bayakli | Masters | QR code service expired |
 | Manaal Ganguli | Masters | QR code service expired |
 | Parthavi Parikh | Masters | Generic link (not individual) |
-| Zaid Inamdar | Masters | Generic link (not individual) |
