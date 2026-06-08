@@ -45,9 +45,8 @@
     margin-bottom: 16px;
   }
   .semester-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;
+    display: grid; grid-template-columns: 1fr; gap: 34px; margin-bottom: 40px;
   }
-  @media (max-width: 768px) { .semester-grid { grid-template-columns: 1fr; } }
   .semester-card {
     background: white; border-radius: 6px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden;
@@ -56,9 +55,11 @@
   .semester-header {
     padding: 20px 24px; border-bottom: 1px solid #eee;
     display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    flex-wrap: wrap;
   }
   .semester-header h2 { font-size: 1.1rem; color: #333; margin: 0; letter-spacing: 0.5px; }
   .semester-header .size { color: #999; font-size: 0.8rem; }
+  .semester-actions { display: flex; align-items: center; gap: 16px; }
   .semester-header a {
     color: #939598; text-decoration: none; font-weight: 600; font-size: 0.8rem;
     letter-spacing: 1px; text-transform: uppercase;
@@ -82,16 +83,22 @@
       <div class="semester-card">
         <div class="semester-header">
           <h2>ADS5 Portfolio</h2>
-          <span class="size">17 MB</span>
-          <a href="Maya_Abu_Samra_ADS5_Portfolio.pdf" download>Download</a>
+          <div class="semester-actions">
+            <span class="size">17 MB</span>
+            <a href="Maya_Abu_Samra_ADS5_Portfolio.pdf" target="_blank" rel="noopener">Open</a>
+            <a href="Maya_Abu_Samra_ADS5_Portfolio.pdf" download>Download</a>
+          </div>
         </div>
         <iframe class="pdf-viewer" src="Maya_Abu_Samra_ADS5_Portfolio.pdf" title="Maya Abu Samra - ADS5 Portfolio"></iframe>
       </div>
       <div class="semester-card">
         <div class="semester-header">
           <h2>ADS6 Portfolio</h2>
-          <span class="size">44 MB</span>
-          <a href="Maya_Abu_Samra_ADS6_Portfolio.pdf" download>Download</a>
+          <div class="semester-actions">
+            <span class="size">44 MB</span>
+            <a href="Maya_Abu_Samra_ADS6_Portfolio.pdf" target="_blank" rel="noopener">Open</a>
+            <a href="Maya_Abu_Samra_ADS6_Portfolio.pdf" download>Download</a>
+          </div>
         </div>
         <iframe class="pdf-viewer" src="Maya_Abu_Samra_ADS6_Portfolio.pdf" title="Maya Abu Samra - ADS6 Portfolio"></iframe>
       </div>
