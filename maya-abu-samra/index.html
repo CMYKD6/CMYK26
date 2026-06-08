@@ -44,6 +44,10 @@
     font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
     margin-bottom: 16px;
   }
+  .semester-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;
+  }
+  @media (max-width: 768px) { .semester-grid { grid-template-columns: 1fr; } }
   .semester-card {
     background: white; border-radius: 6px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden;
@@ -74,13 +78,23 @@
       <h1>Maya Abu Samra</h1>
       <div class="sub">CMYK Exhibition 2026</div>
     </div>
-    <div class="semester-card">
-      <div class="semester-header">
-        <h2>ADS6 Portfolio</h2>
-        <span class="size">44 MB</span>
-        <a href="Maya_Abu_Samra_ADS6_Portfolio.pdf" download>Download</a>
+    <div class="semester-grid">
+      <div class="semester-card">
+        <div class="semester-header">
+          <h2>ADS5 Portfolio</h2>
+          <span class="size">17 MB</span>
+          <a href="Maya_Abu_Samra_ADS5_Portfolio.pdf" download>Download</a>
+        </div>
+        <iframe class="pdf-viewer" src="Maya_Abu_Samra_ADS5_Portfolio.pdf" title="Maya Abu Samra - ADS5 Portfolio"></iframe>
       </div>
-      <iframe class="pdf-viewer" src="Maya_Abu_Samra_ADS6_Portfolio.pdf" title="Maya Abu Samra - ADS6 Portfolio"></iframe>
+      <div class="semester-card">
+        <div class="semester-header">
+          <h2>ADS6 Portfolio</h2>
+          <span class="size">44 MB</span>
+          <a href="Maya_Abu_Samra_ADS6_Portfolio.pdf" download>Download</a>
+        </div>
+        <iframe class="pdf-viewer" src="Maya_Abu_Samra_ADS6_Portfolio.pdf" title="Maya Abu Samra - ADS6 Portfolio"></iframe>
+      </div>
     </div>
     <div class="footer">
       <a href="../index.html">Back to Home</a>
