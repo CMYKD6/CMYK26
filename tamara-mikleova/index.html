@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tamara Mikleova - CMYK Exhibition 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; background: #f4f4f4; font-family: 'Space Grotesk', system-ui, sans-serif;
+    padding: 40px 20px; position: relative; min-height: 100vh;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(147,149,152,0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(147,149,152,0.12) 1px, transparent 1px);
+    background-size: 24px 24px; z-index: 0; pointer-events: none;
+  }
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 120px 120px; z-index: 0; pointer-events: none;
+  }
+  a.back {
+    position: fixed; top: 30px; left: 30px;
+    background: rgba(255,255,255,0.95); color: #333;
+    padding: 10px 24px; border-radius: 4px; text-decoration: none;
+    font-weight: 600; font-size: 0.85rem; z-index: 10;
+    letter-spacing: 1px; text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .container { max-width: 1000px; margin: 0 auto; position: relative; z-index: 1; }
+  .header { text-align: center; margin-bottom: 50px; padding-top: 20px; }
+  h1 { font-size: 2.4rem; color: #111; margin: 0 0 8px; letter-spacing: -0.5px; }
+  .sub { color: #888; font-size: 0.95rem; letter-spacing: 2px; text-transform: uppercase; }
+  .badge {
+    display: inline-block; background: #939598; color: #fff;
+    padding: 4px 16px; border-radius: 3px; font-size: 0.8rem;
+    font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .semester-card {
+    background: white; border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden;
+    border-top: 4px solid #939598;
+  }
+  .semester-header {
+    padding: 20px 24px; border-bottom: 1px solid #eee;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .semester-header h2 { font-size: 1.1rem; color: #333; margin: 0; letter-spacing: 0.5px; }
+  .semester-header .size { color: #999; font-size: 0.8rem; }
+  .semester-header a {
+    color: #939598; text-decoration: none; font-weight: 600; font-size: 0.8rem;
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .semester-header a:hover { color: #666; }
+  .pdf-viewer { width: 100%; height: 75vh; border: none; }
+  .footer { text-align: center; margin-top: 30px; padding: 20px 0; }
+  .footer a { color: #888; text-decoration: none; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; }
+  .footer a:hover { color: #333; }
+</style>
+</head>
+<body>
+  <a href="../year5.html" class="back">Back to Masters - Year 5</a>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Masters</div>
+      <h1>Tamara Mikleova</h1>
+      <div class="sub">CMYK Exhibition 2026</div>
+    </div>
+    <div class="semester-card">
+      <div class="semester-header">
+        <h2>ADS5 Portfolio</h2>
+        <span class="size">13 MB</span>
+        <a href="Tamara_Mikleova_ADS5_Portfolio.pdf" download>Download</a>
+      </div>
+      <iframe class="pdf-viewer" src="Tamara_Mikleova_ADS5_Portfolio.pdf" title="Tamara Mikleova - ADS5 Portfolio"></iframe>
+    </div>
+    <div class="footer">
+      <a href="../index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
